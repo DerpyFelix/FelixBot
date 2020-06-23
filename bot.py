@@ -265,7 +265,7 @@ async def lottery(ctx):
      'you won an epic :turtle:!',
      'you won an epic :butterfly:!',
      'YOU WON THE JACKPOT!!! HERES A LEGENDARY <:nugget:710823726891139123:>!!!']
-    await ctx.send(random.choice(lotterys))
+    await ctx.send(user.name + random.choice(lotterys))
 @bot.command()
 async def askfelix(ctx, name = None):
     answers = ['felix says yes',
@@ -498,8 +498,8 @@ async def sentence(ctx, *, name=None):
      'grandma']
     await ctx.send(random.choice(singlestarts) + ' ' + random.choice(adjectives) + ' ' + random.choice(singlesubjects) + ' ' + random.choice(singleverbs) + ' ' + random.choice(singlestarts) + ' ' + random.choice(adjectives) + ' ' + random.choice(allsubjects) + '.')
 @bot.command()
-async def floridaman(ctx):
+async def floridaman(ctx): #unfinished
     await ctx.send('florida man')
  
-bot.run('NzA4OTg3MDA3MTA3MzM0MjI2.Xrfn_g._T6u8vmv2j8ZLhdg1nzW1K4mokg')
+bot.run('token')
 
